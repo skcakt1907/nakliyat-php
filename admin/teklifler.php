@@ -48,12 +48,12 @@ require_once __DIR__ . '/inc/header.php';
       <div class="col-md-3"><small class="text-muted">Telefon</small><div><a href="tel:<?= e($detay['tel']) ?>"><?= e($detay['tel']) ?></a></div></div>
       <div class="col-md-3"><small class="text-muted">E-posta</small><div><?= $detay['mail']?'<a href="mailto:'.e($detay['mail']).'">'.e($detay['mail']).'</a>':'—' ?></div></div>
       <div class="col-md-3"><small class="text-muted">Hizmet</small><div><strong><?= e($detay['hizmet']) ?></strong></div></div>
-      <div class="col-md-3"><small class="text-muted">İl/İlçe</small><div><?= e($detay['il'])?:'—' ?></div></div>
-      <div class="col-md-3"><small class="text-muted">Adres</small><div><?= e($detay['adres'])?:'—' ?></div></div>
-      <div class="col-md-3"><small class="text-muted">Alan (m²)</small><div><?= e($detay['alan'])?:'—' ?></div></div>
-      <div class="col-md-3"><small class="text-muted">Bütçe</small><div><?= e($detay['butce'])?:'—' ?></div></div>
-      <div class="col-md-3"><small class="text-muted">Başlangıç</small><div><?= e($detay['baslangic'])?:'—' ?></div></div>
-      <div class="col-12"><small class="text-muted">Proje Detayı</small><div style="white-space:pre-wrap;background:#f9fafb;padding:.8rem;border-radius:6px"><?= e($detay['detay'])?:'—' ?></div></div>
+      <div class="col-md-3"><small class="text-muted">Nereden</small><div><?= e($detay['il'])?:'—' ?></div></div>
+      <div class="col-md-3"><small class="text-muted">Nereye</small><div><?= e($detay['adres'])?:'—' ?></div></div>
+      <div class="col-md-3"><small class="text-muted">Eşya / Daire Tipi</small><div><?= e($detay['alan'])?:'—' ?></div></div>
+      <div class="col-md-3"><small class="text-muted">Kat & Asansör</small><div><?= e($detay['butce'])?:'—' ?></div></div>
+      <div class="col-md-3"><small class="text-muted">Taşınma Tarihi</small><div><?= e($detay['baslangic'])?:'—' ?></div></div>
+      <div class="col-12"><small class="text-muted">Notlar</small><div style="white-space:pre-wrap;background:#f9fafb;padding:.8rem;border-radius:6px"><?= e($detay['detay'])?:'—' ?></div></div>
     </div>
     <hr>
     <form method="post" class="row g-3 align-items-end">
@@ -92,7 +92,7 @@ require_once __DIR__ . '/inc/header.php';
   </div>
   <div class="table-responsive">
     <table class="table table-hover align-middle mb-0">
-      <thead><tr><th>#</th><th>Ad</th><th>Telefon</th><th>Hizmet</th><th>Bütçe</th><th>Durum</th><th>Tarih</th><th></th></tr></thead>
+      <thead><tr><th>#</th><th>Ad</th><th>Telefon</th><th>Hizmet</th><th>Kat & Asansör</th><th>Durum</th><th>Tarih</th><th></th></tr></thead>
       <tbody>
       <?php foreach($liste as $t): $du=$durumlar[$t['durum']]??['—','bg-light text-dark']; ?>
         <tr>

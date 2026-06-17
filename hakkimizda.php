@@ -14,7 +14,7 @@ require_once __DIR__ . '/inc/header.php';
     <div class="row align-items-center g-5">
       <div class="col-lg-6">
         <div class="about-img">
-          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1000&q=80" alt="">
+          <img src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b?w=1000&q=80" alt="">
           <div class="about-exp"><h3><?= e(ayar('yil')) ?>+</h3><p>Yıllık Tecrübe</p></div>
         </div>
       </div>
@@ -23,10 +23,10 @@ require_once __DIR__ . '/inc/header.php';
         <h2><?= e(ayar('site_adi')) ?> <span style="color:var(--primary)">Kimdir?</span></h2>
         <p><?= e(ayar('hakkimizda_uzun')) ?></p>
         <ul class="about-list">
-          <li><i class="bi bi-check-circle-fill"></i> Sektöründe uzman ve deneyimli kadro</li>
-          <li><i class="bi bi-check-circle-fill"></i> Modern altyapı ve güçlü teknik donanım</li>
-          <li><i class="bi bi-check-circle-fill"></i> Kalite standartlarına tam uyum</li>
-          <li><i class="bi bi-check-circle-fill"></i> Müşteri odaklı çalışma anlayışı</li>
+          <li><i class="bi bi-check-circle-fill"></i> Eğitimli ve deneyimli taşıma ekibi</li>
+          <li><i class="bi bi-check-circle-fill"></i> Asansörlü ve bakımlı araç filosu</li>
+          <li><i class="bi bi-check-circle-fill"></i> Tüm taşımalarda eşya sigortası</li>
+          <li><i class="bi bi-check-circle-fill"></i> Şeffaf fiyat, zamanında teslim</li>
         </ul>
       </div>
     </div>
@@ -58,7 +58,7 @@ require_once __DIR__ . '/inc/header.php';
   <div class="container">
     <div class="row g-4">
       <div class="col-md-3 col-6"><div class="stat-item"><i class="bi bi-award-fill"></i><h3><?= e(ayar('yil')) ?>+</h3><p>Yıllık Tecrübe</p></div></div>
-      <div class="col-md-3 col-6"><div class="stat-item"><i class="bi bi-building"></i><h3><?= e(ayar('proje_sayi')) ?>+</h3><p>Tamamlanan Proje</p></div></div>
+      <div class="col-md-3 col-6"><div class="stat-item"><i class="bi bi-truck"></i><h3><?= e(ayar('proje_sayi')) ?>+</h3><p>Başarılı Taşıma</p></div></div>
       <div class="col-md-3 col-6"><div class="stat-item"><i class="bi bi-people-fill"></i><h3><?= e(ayar('musteri_sayi')) ?>+</h3><p>Mutlu Müşteri</p></div></div>
       <div class="col-md-3 col-6"><div class="stat-item"><i class="bi bi-person-badge"></i><h3><?= e(ayar('personel_sayi')) ?>+</h3><p>Uzman Personel</p></div></div>
     </div>

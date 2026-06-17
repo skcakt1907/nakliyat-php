@@ -34,8 +34,8 @@ require_once __DIR__ . '/inc/header.php';
           <?php endforeach; ?>
         </div>
         <div class="cta p-4 rounded text-center">
-          <h5 style="color:#fff">Teklif Almak İster misiniz?</h5>
-          <a href="<?= SITE_URL ?>/iletisim" class="btn mt-2">İletişim</a>
+          <h5 style="color:#fff">Fiyat Teklifi Almak İster misiniz?</h5>
+          <a href="<?= SITE_URL ?>/teklif" class="btn mt-2">Fiyat Al</a>
         </div>
       </div>
     </div>

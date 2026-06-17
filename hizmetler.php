@@ -10,8 +10,8 @@
   <div class="container">
     <div class="section-head center">
       <span class="badge-mini">Ne Yapıyoruz?</span>
-      <h2>Sunduğumuz <span>Ana Hizmetler</span></h2>
-      <p>Alanımızdaki uzmanlığımızla ihtiyacınıza özel çözümler üretiyoruz.</p>
+      <h2>Sunduğumuz <span>Taşımacılık Hizmetleri</span></h2>
+      <p>Evden eve, ofis, şehirler arası taşıma ve depolama; taşınmanın her aşamasında yanınızdayız.</p>
     </div>
     <div class="row g-4">
       <?php foreach($hizmetler as $h): ?>
@@ -30,8 +30,8 @@
 
 <section class="cta">
   <div class="container d-flex justify-content-between align-items-center flex-wrap">
-    <h3>İhtiyacınıza özel teklif için bize ulaşın</h3>
-    <a href="<?= SITE_URL ?>/iletisim" class="btn">Teklif Al</a>
+    <h3>Taşınmanız için ücretsiz keşif ve fiyat alın</h3>
+    <a href="<?= SITE_URL ?>/teklif" class="btn">Fiyat Al</a>
   </div>
 </section>
 <?php require_once __DIR__ . '/inc/footer.php'; ?>

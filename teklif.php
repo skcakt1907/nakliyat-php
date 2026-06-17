@@ -31,7 +31,7 @@ require_once __DIR__ . '/inc/header.php';
 <section class="page-head">
   <div class="container">
     <h1>Fiyat Teklifi Al</h1>
-    <nav><ol class="breadcrumb"><li class="breadcrumb-item"><a href="<?= SITE_URL ?>/">Anasayfa</a></li><li class="breadcrumb-item active">Teklif Al</li></ol></nav>
+    <nav><ol class="breadcrumb"><li class="breadcrumb-item"><a href="<?= SITE_URL ?>/">Anasayfa</a></li><li class="breadcrumb-item active">Fiyat Teklifi</li></ol></nav>
   </div>
 </section>
 
@@ -39,9 +39,9 @@ require_once __DIR__ . '/inc/header.php';
   <div class="container">
     <div class="row g-5">
       <div class="col-lg-7">
-        <span class="badge-mini">Ücretsiz Teklif</span>
-        <h2>Projeniz İçin <span style="color:var(--primary)">Fiyat Teklifi</span> Alın</h2>
-        <p class="text-muted mb-4">Formu doldurun, uzman ekibimiz sizi arasın ve ihtiyacınıza en uygun teklifi hazırlayalım.</p>
+        <span class="badge-mini">Ücretsiz Keşif & Teklif</span>
+        <h2>Taşınmanız İçin <span style="color:var(--primary)">Fiyat Teklifi</span> Alın</h2>
+        <p class="text-muted mb-4">Formu doldurun, uzman ekibimiz sizi arasın ve taşınmanıza en uygun fiyatı hazırlasın.</p>
 
         <?php if($mesaj): ?><div class="alert alert-success"><i class="bi bi-check-circle-fill me-2"></i><?= e($mesaj) ?></div><?php endif; ?>
         <?php if($hata):  ?><div class="alert alert-danger"><i class="bi bi-exclamation-triangle-fill me-2"></i><?= e($hata) ?></div><?php endif; ?>
@@ -55,7 +55,7 @@ require_once __DIR__ . '/inc/header.php';
             <div class="col-md-12"><label class="form-label">E-posta</label><input type="email" class="form-control" name="mail"></div>
           </div>
 
-          <h5 class="mb-3 mt-4" style="color:var(--primary)"><i class="bi bi-clipboard-check me-2"></i>Proje Detayları</h5>
+          <h5 class="mb-3 mt-4" style="color:var(--primary)"><i class="bi bi-truck me-2"></i>Taşıma Detayları</h5>
           <div class="row g-3">
             <div class="col-md-6">
               <label class="form-label">Hizmet Türü *</label>
@@ -67,34 +67,45 @@ require_once __DIR__ . '/inc/header.php';
                 <option value="Diğer">Diğer</option>
               </select>
             </div>
-            <div class="col-md-6"><label class="form-label">İl / İlçe</label><input class="form-control" name="il" placeholder="örn. İstanbul / Şişli"></div>
-            <div class="col-12"><label class="form-label">Proje Adresi</label><input class="form-control" name="adres"></div>
-            <div class="col-md-4"><label class="form-label">Alan (m²)</label><input class="form-control" name="alan" placeholder="örn. 250"></div>
+            <div class="col-md-6"><label class="form-label">Nereden (İl / İlçe)</label><input class="form-control" name="il" placeholder="örn. İstanbul / Kadıköy"></div>
+            <div class="col-12"><label class="form-label">Nereye (Varış Adresi / İl)</label><input class="form-control" name="adres" placeholder="örn. Ankara / Çankaya"></div>
             <div class="col-md-4">
-              <label class="form-label">Tahmini Bütçe</label>
-              <select class="form-select" name="butce">
+              <label class="form-label">Eşya / Daire Tipi</label>
+              <select class="form-select" name="alan">
                 <option value="">— Seçiniz —</option>
-                <option>50.000 ₺ altı</option>
-                <option>50.000 - 250.000 ₺</option>
-                <option>250.000 - 1.000.000 ₺</option>
-                <option>1.000.000 ₺ üzeri</option>
-                <option>Bilmiyorum</option>
+                <option>1+1 Daire</option>
+                <option>2+1 Daire</option>
+                <option>3+1 Daire</option>
+                <option>4+1 ve üzeri / Villa</option>
+                <option>Ofis / İşyeri</option>
+                <option>Parça Eşya</option>
               </select>
             </div>
             <div class="col-md-4">
-              <label class="form-label">Başlangıç Zamanı</label>
+              <label class="form-label">Kat & Asansör Durumu</label>
+              <select class="form-select" name="butce">
+                <option value="">— Seçiniz —</option>
+                <option>Zemin / Bahçe katı</option>
+                <option>Bina asansörü var</option>
+                <option>Asansör yok (yüksek kat)</option>
+                <option>Mobil asansör gerekli</option>
+                <option>Emin değilim</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Taşınma Tarihi</label>
               <select class="form-select" name="baslangic">
                 <option value="">— Seçiniz —</option>
-                <option>Acil (1 hafta içinde)</option>
+                <option>Acil (bu hafta)</option>
+                <option>Bu ay içinde</option>
                 <option>1 ay içinde</option>
-                <option>2-3 ay içinde</option>
-                <option>3 ay+ sonra</option>
+                <option>Tarih esnek</option>
                 <option>Sadece bilgi alıyorum</option>
               </select>
             </div>
-            <div class="col-12"><label class="form-label">Proje Detayı / Notlar</label><textarea class="form-control" name="detay" rows="5" placeholder="Projeniz hakkında bilmemiz gerekenler..."></textarea></div>
+            <div class="col-12"><label class="form-label">Eklemek İstedikleriniz / Notlar</label><textarea class="form-control" name="detay" rows="5" placeholder="Özel eşya (piyano, kasa vb.), paketleme ihtiyacı, ek bilgiler..."></textarea></div>
             <div class="col-12 d-flex gap-2 align-items-center flex-wrap mt-2">
-              <button class="btn btn-primary-c"><i class="bi bi-send"></i> Teklif Talebi Gönder</button>
+              <button class="btn btn-primary-c"><i class="bi bi-send"></i> Fiyat Teklifi Al</button>
               <span class="text-muted small ms-2"><i class="bi bi-shield-check me-1"></i>Bilgileriniz gizli tutulur, asla 3. kişilerle paylaşılmaz.</span>
             </div>
           </div>

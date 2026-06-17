@@ -10,12 +10,12 @@ $blogYazi  = getList('blog','durum=1','tarih DESC',3);
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
-        <span class="hero-badge"><i class="bi bi-circle-fill"></i> Profesyonel · Güvenilir · Kurumsal</span>
-        <h1>Profesyonel Hizmet,<br>Güvenilir <span>Çözüm</span>,<br>Kurumsal Kalite.</h1>
+        <span class="hero-badge"><i class="bi bi-circle-fill"></i> Sigortalı · Hasarsız · Zamanında</span>
+        <h1>Evden Eve Nakliyatta<br>Güvenin <span>Rotası</span>,<br>Hasarsız Taşıma.</h1>
         <p><?= e(ayar('site_aciklama')) ?></p>
         <div class="hero-cta">
           <a href="<?= SITE_URL ?>/hizmetler" class="btn btn-orange me-md-2">Hizmetlerimiz <i class="bi bi-arrow-right ms-2"></i></a>
-          <a href="<?= SITE_URL ?>/teklif" class="btn btn-line">Teklif Al</a>
+          <a href="<?= SITE_URL ?>/teklif" class="btn btn-line">Fiyat Al</a>
         </div>
       </div>
     </div>
@@ -24,8 +24,8 @@ $blogYazi  = getList('blog','durum=1','tarih DESC',3);
     <div class="container">
       <div class="row g-3">
         <div class="col-md-4 col-6"><div class="meta-item"><i class="bi bi-award-fill"></i><div><strong><?= e(ayar('yil')) ?>+ Yıl</strong><small>Sektör Tecrübesi</small></div></div></div>
-        <div class="col-md-4 col-6"><div class="meta-item"><i class="bi bi-people-fill"></i><div><strong>Uzman Kadro</strong><small>Alanında Deneyimli Ekip</small></div></div></div>
-        <div class="col-md-4 col-12"><div class="meta-item"><i class="bi bi-shield-check"></i><div><strong>Müşteri Memnuniyeti</strong><small>Kalite ve Güven Önceliğimiz</small></div></div></div>
+        <div class="col-md-4 col-6"><div class="meta-item"><i class="bi bi-people-fill"></i><div><strong>Uzman Taşıma Ekibi</strong><small>Eğitimli ve Deneyimli Kadro</small></div></div></div>
+        <div class="col-md-4 col-12"><div class="meta-item"><i class="bi bi-shield-check"></i><div><strong>Eşya Sigortası</strong><small>Taşımalarımız Sigorta Güvencesinde</small></div></div></div>
       </div>
     </div>
   </div>
@@ -36,21 +36,21 @@ $blogYazi  = getList('blog','durum=1','tarih DESC',3);
     <div class="row align-items-center g-5">
       <div class="col-lg-6">
         <div class="about-img-wrap">
-          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=85" alt="">
+          <img src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b?w=900&q=85" alt="">
           <div class="exp-badge"><span class="num"><?= e(ayar('yil')) ?>+</span><span class="lbl">Yıllık Tecrübe</span></div>
         </div>
       </div>
       <div class="col-lg-6">
         <div class="section-head">
           <span class="mini">Hakkımızda</span>
-          <h2>Modern Altyapı,<br><span>Uzman Ekip</span></h2>
+          <h2>Modern Araç Filosu,<br><span>Uzman Ekip</span></h2>
           <p class="desc"><?= e(ayar('hakkimizda_kisa')) ?></p>
         </div>
         <ul class="about-features">
-          <li><i class="bi bi-check"></i> Uzman ve Deneyimli Kadro</li>
-          <li><i class="bi bi-check"></i> Zamanında Teslim Garantisi</li>
-          <li><i class="bi bi-check"></i> Şeffaf Fiyatlandırma</li>
-          <li><i class="bi bi-check"></i> 7/24 Müşteri Desteği</li>
+          <li><i class="bi bi-check"></i> Eşya Sigortası Güvencesi</li>
+          <li><i class="bi bi-check"></i> Asansörlü Araç Filosu</li>
+          <li><i class="bi bi-check"></i> Şeffaf, Sürprizsiz Fiyat</li>
+          <li><i class="bi bi-check"></i> Ücretsiz Keşif & 7/24 Destek</li>
         </ul>
         <a href="<?= SITE_URL ?>/hakkimizda" class="btn btn-orange mt-4">Daha Fazla <i class="bi bi-arrow-right ms-2"></i></a>
       </div>
@@ -62,8 +62,8 @@ $blogYazi  = getList('blog','durum=1','tarih DESC',3);
   <div class="container">
     <div class="section-head center">
       <span class="mini">Hizmetlerimiz</span>
-      <h2>Sunduğumuz <span>Ana Hizmetler</span></h2>
-      <p class="desc">İhtiyacınıza özel, uçtan uca profesyonel çözümler sunuyoruz.</p>
+      <h2>Sunduğumuz <span>Taşımacılık Hizmetleri</span></h2>
+      <p class="desc">Evden eve, ofis, şehirler arası ve depolama; taşınmanın her aşamasında yanınızdayız.</p>
     </div>
     <div class="row g-4">
       <?php foreach($hizmetler as $h): ?>
@@ -80,8 +80,8 @@ $blogYazi  = getList('blog','durum=1','tarih DESC',3);
         <a href="<?= SITE_URL ?>/teklif" class="service-card d-flex align-items-center justify-content-center text-decoration-none" style="background:var(--dark);color:#fff;min-height:100%">
           <div class="text-center">
             <i class="bi bi-arrow-up-right" style="font-size:2.5rem;color:var(--primary)"></i>
-            <h4 style="color:#fff;margin-top:1rem">Teklif Al</h4>
-            <p style="color:#9ca3af;margin:0">Ücretsiz teklif için tıklayın</p>
+            <h4 style="color:#fff;margin-top:1rem">Fiyat Al</h4>
+            <p style="color:#9ca3af;margin:0">Ücretsiz keşif ve fiyat için tıklayın</p>
           </div>
         </a>
       </div>
@@ -93,7 +93,7 @@ $blogYazi  = getList('blog','durum=1','tarih DESC',3);
   <div class="container">
     <div class="row g-4">
       <div class="col-md-3 col-6"><div class="stat"><i class="bi bi-award-fill"></i><h3><?= e(ayar('yil')) ?>+</h3><p>Yıllık Tecrübe</p></div></div>
-      <div class="col-md-3 col-6"><div class="stat"><i class="bi bi-building"></i><h3><?= e(ayar('proje_sayi')) ?>+</h3><p>Tamamlanan Proje</p></div></div>
+      <div class="col-md-3 col-6"><div class="stat"><i class="bi bi-truck"></i><h3><?= e(ayar('proje_sayi')) ?>+</h3><p>Başarılı Taşıma</p></div></div>
       <div class="col-md-3 col-6"><div class="stat"><i class="bi bi-people-fill"></i><h3><?= e(ayar('musteri_sayi')) ?>+</h3><p>Mutlu Müşteri</p></div></div>
       <div class="col-md-3 col-6"><div class="stat"><i class="bi bi-person-badge"></i><h3><?= e(ayar('personel_sayi')) ?>+</h3><p>Uzman Personel</p></div></div>
     </div>
@@ -104,10 +104,10 @@ $blogYazi  = getList('blog','durum=1','tarih DESC',3);
   <div class="container">
     <div class="section-head d-flex justify-content-between align-items-end flex-wrap">
       <div>
-        <span class="mini">Projelerimiz</span>
-        <h2>Son <span>Çalışmalarımız</span></h2>
+        <span class="mini">Referanslarımız</span>
+        <h2>Son <span>Taşımalarımız</span></h2>
       </div>
-      <a href="<?= SITE_URL ?>/projeler" class="btn btn-orange">Tüm Projeler <i class="bi bi-arrow-right ms-2"></i></a>
+      <a href="<?= SITE_URL ?>/projeler" class="btn btn-orange">Tüm Referanslar <i class="bi bi-arrow-right ms-2"></i></a>
     </div>
     <div class="row g-4">
       <?php foreach($projeler as $p): ?>
@@ -151,8 +151,8 @@ $blogYazi  = getList('blog','durum=1','tarih DESC',3);
 <section class="cta-strip">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-8"><h3>Projeniz için ücretsiz teklif alın</h3><p>İhtiyacınızı dinliyor, size en uygun çözümü ve maliyeti çıkarıyoruz.</p></div>
-      <div class="col-lg-4 text-lg-end mt-3 mt-lg-0"><a href="<?= SITE_URL ?>/teklif" class="btn">Teklif Talebi Gönder <i class="bi bi-arrow-right ms-2"></i></a></div>
+      <div class="col-lg-8"><h3>Taşınmanız için ücretsiz keşif ve fiyat alın</h3><p>Eşyalarınızı dinliyor, size en uygun taşıma planını ve net fiyatı çıkarıyoruz.</p></div>
+      <div class="col-lg-4 text-lg-end mt-3 mt-lg-0"><a href="<?= SITE_URL ?>/teklif" class="btn">Fiyat Teklifi Al <i class="bi bi-arrow-right ms-2"></i></a></div>
     </div>
   </div>
 </section>

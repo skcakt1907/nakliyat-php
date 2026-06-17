@@ -17,7 +17,7 @@
         <h5>Kurumsal</h5>
         <a href="<?= SITE_URL ?>/hakkimizda">Hakkımızda</a>
         <a href="<?= SITE_URL ?>/hizmetler">Hizmetler</a>
-        <a href="<?= SITE_URL ?>/projeler">Projeler</a>
+        <a href="<?= SITE_URL ?>/projeler">Referanslarımız</a>
         <a href="<?= SITE_URL ?>/blog">Blog</a>
         <a href="<?= SITE_URL ?>/iletisim">İletişim</a>
       </div>

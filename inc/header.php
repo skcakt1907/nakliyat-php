@@ -34,10 +34,10 @@ $hizmetMenu = getList('hizmetler','durum=1','sira ASC');
             <?php endforeach; ?>
           </div>
         </li>
-        <li class="nav-item"><a class="nav-link <?= in_array($current,['projeler.php','proje-detay.php'])?'active':'' ?>" href="<?= SITE_URL ?>/projeler">Projelerimiz</a></li>
+        <li class="nav-item"><a class="nav-link <?= in_array($current,['projeler.php','proje-detay.php'])?'active':'' ?>" href="<?= SITE_URL ?>/projeler">Referanslarımız</a></li>
         <li class="nav-item"><a class="nav-link <?= in_array($current,['blog.php','blog-detay.php'])?'active':'' ?>" href="<?= SITE_URL ?>/blog">Blog</a></li>
         <li class="nav-item"><a class="nav-link <?= $current==='iletisim.php'?'active':'' ?>" href="<?= SITE_URL ?>/iletisim">İletişim</a></li>
-        <li class="nav-item"><a class="nav-link nav-cta" href="<?= SITE_URL ?>/teklif">Teklif Al <i class="bi bi-arrow-right ms-1"></i></a></li>
+        <li class="nav-item"><a class="nav-link nav-cta" href="<?= SITE_URL ?>/teklif">Fiyat Al <i class="bi bi-arrow-right ms-1"></i></a></li>
       </ul>
     </div>
   </div>
